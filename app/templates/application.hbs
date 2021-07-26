@@ -1,0 +1,8 @@
+{{!-- application.hbs is like a shell to the ember app. It does not have a route of its own and can be used to put site wide components. --}}
+<div class="container">
+  <NavBar></NavBar>
+  <div class="body">
+    {{!-- The outlet keyword is similar to yield keyword. These kind of keywords are called ember helpers - https://stackoverflow.com/questions/19982257/ember-js-handlebars-render-vs-outlet-vs-partial-vs-view-vs-control --}}
+    {{outlet}}
+  </div>
+</div>
