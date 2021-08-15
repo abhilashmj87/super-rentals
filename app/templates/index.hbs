@@ -2,11 +2,11 @@
   <h2>Welcome to Super Rentals!</h2>
   <p>We hope you find exactly what you're looking for in a place to stay.</p>
 </PageHeader>
-
+{{!-- Read details about Routes and model hook in routes/index.js . The model object fetched from there is accesible here as @model. --}}
 <div class="rentals">
   <ul class="results">
-    <li><Rental /></li>
-    <li><Rental /></li>
-    <li><Rental /></li>
+    {{#each @model as |rental|}}
+      <li><Rental @rental={{rental}} /></li>
+    {{/each}}
   </ul>
 </div>
