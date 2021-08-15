@@ -1,0 +1,13 @@
+{{#if this.isLarge}}
+    {{!-- The below way is the way event handlers in ember work. {{on}} is one of the event handlers --}}
+  <button type="button" class="image large" {{on "click" this.toggleImageSize}}>
+    {{!-- ...attributes helps us pickup any html attribute on the main component tag and use it inside the component --}}
+    <img ...attributes>
+    <small>View Smaller</small>
+  </button>
+{{else}}
+  <button type="button" class="image" {{on "click" this.toggleImageSize}}>
+    <img ...attributes>
+    <small>View Larger</small>
+  </button>
+{{/if}}

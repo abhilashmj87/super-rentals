@@ -196,6 +196,7 @@ p {
 .jumbo {
   padding: 50px;
   background: #f6f6f6;
+  overflow: auto;
 }
 
 .jumbo:hover {
